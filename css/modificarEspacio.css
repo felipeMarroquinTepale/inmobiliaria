@@ -1,355 +1,242 @@
-* {
+
+/*INICIA MENU*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
+  
 }
-body {
-  font-size: 14px;
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
-.v2_394 {
+
+nav{
+  background: white;
+  height: 80px;
   width: 100%;
-  height: 1024px;
-  background: rgba(236,236,236,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  border-bottom: 1px solid #d6d2d2;
 }
-.v2_407 {
-  width: 436px;
-  color: rgba(0,0,0,1);
+.enlace{
   position: absolute;
-  top: 133px;
-  left: 502px;
+  padding: 20px 50px;
+}
+.logo{
+  height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #18191F;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
   font-family: Inter;
-  font-weight: Bold;
-  font-size: 32px;
-  opacity: 1;
-  text-align: left;
 }
-.v2_408 {
-  width: 222px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 213px;
-  left: 619px;
-  font-family: Inter;
-  font-weight: Semi Bold;
-  font-size: 25px;
-  opacity: 1;
-  text-align: left;
+li a.active, li a:hover{
+  background: #0E9AB1;
+  transition: .5s;
 }
-.v2_409 {
-  width: 476px;
-  height: 576px;
-  background: url("../images/v2_409.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 306px;
-  left: 432px;
-  overflow: hidden;
-}
-.v2_410 {
-  width: 476px;
-  height: 576px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v2_411 {
-  width: 341px;
-  height: 42px;
-  background: url("../images/v2_411.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 482px;
-  left: 68px;
-  overflow: hidden;
-}
-.v2_412 {
-  width: 341px;
-  height: 42px;
-  background: url("../images/v2_412.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v2_413 {
-  width: 341px;
-  height: 42px;
-  background: url("../images/v2_413.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.v2_414 {
-  width: 341px;
-  height: 42px;
-  background: rgba(14,154,177,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
-  overflow: hidden;
-}
-.v2_415 {
-  width: 87px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 12px;
-  left: 124px;
-  font-family: Inter;
-  font-weight: Medium;
+.checkbtn{
   font-size: 18px;
-  opacity: 1;
-  text-align: left;
-}
-.v2_416 {
-  width: 341px;
-  height: 39px;
-  background: url("../images/v2_416.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 143px;
-  left: 68px;
-  border: 1px solid rgba(208,211,216,1);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  overflow: hidden;
-}
-.v2_417 {
-  width: 124px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 110px;
-  left: 67px;
+  color: #18191F;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
   font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
 }
-.v2_418 {
-  width: 341px;
-  height: 39px;
-  background: url("../images/v2_418.png");
-  background-repeat: no-repeat;
-  background-position: center center;
+#check{
+  display: none;
+}
+section{
+  background: #F5F5F5;
   background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 226px;
-  left: 68px;
-  border: 1px solid rgba(208,211,216,1);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  overflow: hidden;
-}
-.v2_419 {
-  width: 184px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 194px;
-  left: 68px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
-}
-.v2_420 {
-  width: 341px;
-  height: 40px;
-  background: url("../images/v2_420.png");
-  background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 309px;
-  left: 68px;
-  border: 1px solid rgba(208,211,216,1);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  overflow: hidden;
+  height: calc(100vh - 80px);
 }
-.v2_421 {
-  width: 341px;
-  height: 40px;
-  background: url("../images/v2_421.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 404px;
-  left: 67px;
-  border: 1px solid rgba(208,211,216,1);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  overflow: hidden;
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 14px;
+      font-family: Inter;
+  }
 }
-.v2_422 {
-  width: 317px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 277px;
-  left: 68px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 18px;
+      font-family: Inter;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
 }
-.v2_423 {
-  width: 317px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 372px;
-  left: 68px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  opacity: 1;
-  text-align: left;
+
+
+/*FIN MENU*/
+
+/*INICIA SECTION*/
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  height: 100%;
 }
-.v6_115 {
+
+/* Full-width inputs */
+input[type=text], input[type=password] , input[type=email], input[type=number]{
   width: 100%;
-  height: 82px;
-  background: url("../images/v6_115.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+  padding: 15px 20px;
+  margin: 8px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+
 }
-.v6_116 {
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #0E9AB1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 5px 0;
+  border: none;
+  cursor: pointer;
   width: 100%;
-  height: 82px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  box-shadow: 0px 1px 0px rgba(0.8980392217636108, 0.9137254953384399, 0.9490196108818054, 1);
-  overflow: hidden;
+  font-size: 20px;
+  border-radius: 12px;
 }
-.v6_117 {
-  width: 100%;
-  height: 82px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  box-shadow: 0px 1px 0px rgba(0.8980392217636108, 0.9137254953384399, 0.9490196108818054, 1);
-  overflow: hidden;
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
 }
-.v6_118 {
-  width: 100%;
-  height: 82px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  box-shadow: 0px 1px 0px rgba(0.8980392217636108, 0.9137254953384399, 0.9490196108818054, 1);
-  overflow: hidden;
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
-.v6_119 {
-  width: 172px;
-  height: 53px;
-  background: url("../images/v6_119.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  overflow: hidden;
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
 }
-.v6_120 {
-  width: 41px;
-  color: rgba(24,25,31,1);
-  position: absolute;
-  top: 21px;
-  left: 115px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+
+/* Avatar image */
+img.avatar {
+  width: 5%;
+  border-radius: 50%;
 }
-.v6_121 {
-  width: 41px;
-  color: rgba(24,25,31,1);
-  position: absolute;
-  top: 31px;
-  left: 951px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+
+/* Add padding to containers */
+.container {
+  padding: 20px;
+  font-size: 20px;
 }
-.v6_122 {
-  width: 92px;
-  color: rgba(24,25,31,1);
-  position: absolute;
-  top: 31px;
-  left: 1028px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
-.v6_123 {
-  width: 58px;
-  color: rgba(24,25,31,1);
-  position: absolute;
-  top: 31px;
-  left: 1156px;
-  font-family: Inter;
-  font-weight: Bold;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+.sesion{
+  font-size: 11px;
 }
+
+.divTitle{
+  height: 15%;
+  width: 28%;
+  margin: 2px auto;
+  display: table;
+  text-align: center;
+  font-size: 32px;
+
+}
+a{
+  color: #0E9AB1;
+}
+
+.spanTitle{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.divSubTitle{
+  height: 5%;
+    width: 28%;
+    margin: 10px auto;
+    display: table;
+    text-align: center;
+    font-size: 25px;
+
+}
+a{
+  color: #0E9AB1;
+}
+
+.spanSubTitle{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.divBody{
+  width: 36%;
+  height: 72%;
+  background-color: white;
+   margin:0px auto;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*TERMINA SECTION*/

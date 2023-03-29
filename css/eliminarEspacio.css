@@ -249,3 +249,295 @@ body {
   opacity: 1;
   text-align: left;
 }
+
+
+
+
+/*INICIA MENU*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #d6d2d2;
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+}
+.logo{
+  height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #18191F;
+  font-size: 14px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: Inter;
+}
+li a.active, li a:hover{
+  background: #0E9AB1;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 18px;
+  color: #18191F;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  font-family: Inter;
+}
+#check{
+  display: none;
+}
+section{
+  background: #F5F5F5;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 14px;
+      font-family: Inter;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 18px;
+      font-family: Inter;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
+
+/*FIN MENU*/
+
+/*INICIA SECTION*/
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+  height: 100%;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] , input[type=email], input[type=number]{
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #0E9AB1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.buttonAceptar {
+  background-color: #0E9AB1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.buttonCancelar {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 5%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.sesion{
+  font-size: 11px;
+}
+
+.divTitle{
+  height: 15%;
+  width: 28%;
+  margin: 2px auto;
+  display: table;
+  text-align: center;
+  font-size: 32px;
+
+}
+a{
+  color: #0E9AB1;
+}
+
+.spanTitle{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.divSubTitle{
+  height: 5%;
+    width: 28%;
+    margin: 10px auto;
+    display: table;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.divBottomTitle{
+  height: 5%;
+    width: 40%;
+    margin: 10px auto;
+    display: table;
+    text-align: center;
+    font-size: 12px;
+}
+a{
+  color: #0E9AB1;
+}
+
+.spanSubTitle{
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+.divBody{
+  width: 50%;
+    height: 40%;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 15px;
+    padding: 5% 0 1% 0;
+}
+
+.divHead{
+  width: 95%;
+    margin: 0px auto;
+    border-radius: 15px;
+    display: flex;
+}
+
+.divHead div{
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/*TERMINA SECTION*/
