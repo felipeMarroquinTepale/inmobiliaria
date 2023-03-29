@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-      <link href="./css/login.css" rel="stylesheet" />
-      <title>Document</title>
-   </head>
-   <body>
-      <div class="v2_229">
-         <span class="v2_251">INMOBILIARIA SANTA REAL</span>
-         <div class="v2_263">
-            <div class="v2_264"></div>
-            <span class="v2_265">¿Ya tiene una cuenta? </span><span class="v2_266"></span>
-            <div class="v2_267">
-               <div class="v2_268"></div>
-               <span class="v2_269"><a href="loginUserLogueado.html">Login<a href="loginUserLogueado.html"></a></span>
-            </div>
-            <div class="v2_270"></div>
-            <span class="v2_271">Usuario</span>
-            <div class="v2_272"></div>
-            <span class="v2_273">Correo</span>
-            <div class="v2_274"></div>
-            <span class="v2_275">Contraseña</span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/login/logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="login.html">Iniciar sesion</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <section>
+      <div class="divTitle">
+         <span class="spanTitle">INMOBILIARIA SANTA REAL</span>
+      </div>
+      <div class="divBody">
+         <form  method="post">
+         <div class="imgcontainer">
+           <img src="./img/login/avatar_login.png" alt="Avatar" class="avatar">
          </div>
-         <div class="v6_91">
-            <div class="v6_92">
-               <div class="v6_93"></div>
-               <div class="v6_104"></div>
-               <div class="v6_100"></div>
-               <div class="v6_94"></div>
-               <span class="v6_95">LOGO</span>
-               <span class="v6_96"><a href="index.html">Home <a href="index.html"></a></span>
-               <span class="v6_97"><a href="login.html">Iniciar sesion <a href="login.html"></span>
-               <!-- <span class="v6_98"><a href="register.html">Register <a href="register.html"></a></span> -->
-            </div>
+       
+         <div class="container">
+         <div> 
+           <label for="uname">Usuario</label>
+           <input type="text" placeholder="Ingresa el nombre de usuario" name="uname" id="uname" pattern="^[A-Za-z]+$" maxlength="35" required>
+         </div>
+         <div>
+            <label for="email">Correo</label>
+            <input type="email" placeholder="Ingresa el correo electronico" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="35" required>
+         </div>
+           
+         <div>
+           <label for="psw">Contrase&ntilde;a</label>
+           <input type="text" placeholder="Ingresa la contrase&ntilde;a" name="psw" id="psw" pattern="^[A-Za-z]+$" maxlength="10" required>
+         </div>
+           <button type="button" onclick="Login()">Login</button>
+           <label>
+            <span class="sesion">¿ Aun no tienes cuenta ? <a href="register.html">Registrate</a></span>
+           </label>
          </div>
       </div>
-   </body>
+    </section>
+   
+</body>
+<script src="./js/login/login.js"></script>
 </html>

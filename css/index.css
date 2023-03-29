@@ -1,0 +1,50 @@
+.sectionIndex{
+    width: 100%;
+    display: flex;
+}
+
+.sectionIndex .dialogSection  {
+    width: 40%;
+    background-color: white;
+    padding: 5% 7% 0% 6%;
+  }
+
+  .sectionIndex  .imgSection {
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imgS{
+    width: 100%;
+    height: 100%;
+  }
+
+  .divTitleIndex{
+    height: 15%;
+    width: 100%;
+    margin: 2px auto;
+    display: table;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5%;
+  
+  }
+
+  .spanTitleIndex{
+    display: table-cell; 
+    vertical-align: middle;
+  }
+
+  .containerIndex {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  .containerIndex .spanContainer {
+    padding: 20px;
+    font-size: 17px;
+    padding-bottom: 15%;
+  }
