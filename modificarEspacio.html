@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-      <link href="./css/modificarEspacio.css" rel="stylesheet" />
-      <title>Document</title>
-   </head>
-   <body>
-      <div class="v2_394">
-         <span class="v2_407">INMOBILIARIA SANTA REAL</span><span class="v2_408">Agregar espacio</span>
-         <div class="v2_409">
-            <div class="v2_410"></div>
-            <div class="v2_411">
-               <div class="v2_412">
-                  <div class="v2_413">
-                     <div class="v2_414"></div>
-                  </div>
-                  <span class="v2_415"><a href="loginUserLogueado.html">Modificar <a href="loginUserLogueado.html"></span>
-               </div>
-            </div>
-            <div class="v2_416"></div>
-            <span class="v2_417">Nombre</span>
-            <div class="v2_418"></div>
-            <span class="v2_419">Renta mensual</span>
-            <div class="v2_420"></div>
-            <div class="v2_421"></div>
-            <span class="v2_422">Caracteristicas de la propiedad</span><span class="v2_423">Tipo de inmueble</span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar espacio</title>
+    <link href="./css/modificarEspacio.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./img/login/logo.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a class="active" href="#">Modificar espacio</a></li>
+            <li><a  href="login.html">Cerrar sesion</a></li>
+            <li><a href="loginUserLogueado.html">Regresar</a></li>
+        </ul>
+    </nav>
+    <section>
+      <div class="divTitle">
+         <span class="spanTitle">INMOBILIARIA SANTA REAL</span>
+      </div>
+      <div class="divSubTitle">
+         <span class="spanSubTitle">Modificar espacio</span>
+      </div>
+      <div class="divBody">
+         <form  method="post">
+       
+         <div class="container">
+         <div> 
+           <label for="uname">Nombre</label>
+           <input type="text" placeholder="Ingresa el nombre del cliente" name="uname" id="uname" pattern="^[A-Za-z]+$" maxlength="35" required>
          </div>
-         <div class="v6_115">
-            <div class="v6_116"></div>
-            <div class="v6_117"></div>
-            <div class="v6_118"></div>
-            <div class="v6_119"></div>
-            <span class="v6_120">LOGO</span><span class="v6_121">Home</span><span class="v6_122"><a href="loginUserLogueado.html">Iniciar sesion <a href="loginUserLogueado.html"></span><span class="v6_123"><a href="register.html">Register<a href="register.html"></span>
+         <div> 
+            <label for="rentmont">Renta mensual</label>
+            <input type="number" placeholder="Ingresa monto de mensualidad" name="rentmont" id="rentmont" pattern="^[A-Za-z]+$" maxlength="10" required>
+          </div>
+          <div> 
+            <label for="caractprop">Caracteristicas de la propiedad</label>
+            <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" maxlength="35" required>
+          </div>
+          <div> 
+            <label for="tiponmueble">Tipo de inmueble</label>
+            <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" maxlength="35" required>
+          </div>
+           <button type="button" onclick="Login()">Modificar</button>
          </div>
       </div>
-   </body>
+    </section>
+   
+</body>
+<script src="./js/login/login.js"></script>
 </html>
