@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/login.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/login.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
+
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="./img/login/logo.png" alt="" class="logo">
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="login.html">Iniciar sesion</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </nav>
-    <section>
-      <div class="divTitle">
-         <span class="spanTitle">INMOBILIARIA SANTA REAL</span>
-      </div>
-      <div class="divBody">
-         <form  method="post">
-         <div class="imgcontainer">
-           <img src="./img/login/avatar_login.png" alt="Avatar" class="avatar">
-         </div>
-       
-         <div class="container">
-         <div> 
-           <label for="uname">Usuario</label>
-           <input type="text" placeholder="Ingresa el nombre de usuario" name="uname" id="uname" pattern="^[A-Za-z]+$" maxlength="35" required>
-         </div>
-         <div>
-            <label for="email">Correo</label>
-            <input type="email" placeholder="Ingresa el correo electronico" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="35" required>
-         </div>
-           
-         <div>
-           <label for="psw">Contrase&ntilde;a</label>
-           <input type="text" placeholder="Ingresa la contrase&ntilde;a" name="psw" id="psw" pattern="^[A-Za-z]+$" maxlength="10" required>
-         </div>
-           <button type="button" onclick="Login()">Login</button>
-           <label>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+      <img src="./img/login/logo.png" alt="" class="logo">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="login.html">Iniciar sesion</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="divTitle">
+      <span class="spanTitle">INMOBILIARIA SANTA REAL</span>
+    </div>
+    <div class="divBody">
+      <form novalidate>
+        <div class="imgcontainer">
+          <img src="./img/login/avatar_login.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <div>
+            <label for="uname">Usuario * 
+            <input type="text" placeholder="Ingresa el nombre de usuario" name="uname" id="uname" pattern="[a-z]{8,}" minlength="8" required>
+            <span class="error" aria-live="polite"></span>
+            </label>
+          </div>
+          <div>
+            <label for="email">Correo * 
+            <input type="email" placeholder="Ingresa el correo electronico" name="email" id="email" minlength="10" maxlength="35" required>
+            <span class="error" aria-live="polite"></span>
+            </label>
+          </div>
+
+          <div>
+            <label for="psw">Contrase&ntilde;a *
+            <input type="text" placeholder="Ingresa la contrase&ntilde;a" name="psw" id="psw" minlength="10" pattern="^[A-Za-z0-9]{8,}" required>
+              <span class="error" aria-live="polite"></span> 
+            </label>
+          </div>
+          <button type="button" id="button" onclick="login()">Login</button>
+          <label>
             <span class="sesion">¿ Aun no tienes cuenta ? <a href="register.html">Registrate</a></span>
-           </label>
-         </div>
-      </div>
-    </section>
-   
+          </label>
+        </div>
+        </form>
+    </div>
+  </section>
+
 </body>
 <script src="./js/login/login.js"></script>
+
 </html>
