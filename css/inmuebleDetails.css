@@ -59,6 +59,10 @@ nav{
     border-radius: 15px;
   }
 
+  body {
+    font-family: Arial, sans-serif;
+    font-weight: normal
+  }
 
   .contenedor  {
     /* background-color: #473f3f; */
@@ -73,13 +77,16 @@ nav{
   }
 
   p{
+    margin-top: 5%;
+
     font-size: small;
     text-align: justify;
+    font-weight: normal
   }
 
 
   h1 {
-    /* background-color: #0E9AB1; */
+    margin-left: 15%;
     text-align: center;
   }
 
@@ -89,10 +96,11 @@ nav{
 
   .lista-imagenes {
     /* background-color: #0E9AB1; */
+    padding-left: 15%;
     background-color: #ECECEC;
     list-style: none;
     margin: 0;
-    padding: 0;
+
   }
 
   .lista-imagenes li {

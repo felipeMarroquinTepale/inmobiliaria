@@ -5,7 +5,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  
+
 }
 
 :root { font-family: 'Inter', sans-serif; }
@@ -140,6 +140,8 @@ body {
 }
 
 p{
+  font-weight: normal;
+  margin-top: 5%;
   font-size: small;
   text-align: justify;
 }
@@ -186,26 +188,27 @@ h1 {
 
 
 .buttonList {
-  background-color: #8d0534;
+    margin-top: 5%;
+    background: rgb(89, 153, 155);
     background-repeat:no-repeat;
     background-position:center;
   }
 
   .buttonList2 {
-    background-color: #2650a9;
+      background: rgb(40, 108, 233);
       background-repeat:no-repeat;
       background-position:center;
     }
     .buttonList3 {
-      background-color: #095c5c;;
+        background: rgb(226, 15, 78);
         background-repeat:no-repeat;
         background-position:center;
       }
 
   .botonimagen{
     background-image:url(../img/contenidoInmuebles/gps.png);
-      background-repeat:no-repeat;
-      height:100px;
-      width:100px;
-      background-position:center;
-    }
+    background-repeat:no-repeat;
+    height:100px;
+    width:100px;
+    background-position:center;
+  }
