@@ -21,7 +21,7 @@
         <ul>
             <li><a class="active" href="#">Modificar espacio</a></li>
             <li><a  href="login.html">Cerrar sesion</a></li>
-            <li><a href="loginUserLogueado.html">Regresar</a></li>
+            <li><a href="contenidoInmuebles.html">Regresar</a></li>
         </ul>
     </nav>
     <section>
@@ -33,29 +33,29 @@
       </div>
       <div class="divBody">
          <form  method="post">
-       
+
          <div class="container">
-         <div> 
+         <div>
            <label for="uname">Nombre</label>
            <input type="text" placeholder="Ingresa el nombre del cliente" name="uname" id="uname" pattern="^[A-Za-z]+$" maxlength="35" required>
          </div>
-         <div> 
+         <div>
             <label for="rentmont">Renta mensual</label>
             <input type="number" placeholder="Ingresa monto de mensualidad" name="rentmont" id="rentmont" pattern="^[A-Za-z]+$" maxlength="10" required>
           </div>
-          <div> 
+          <div>
             <label for="caractprop">Caracteristicas de la propiedad</label>
             <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" maxlength="35" required>
           </div>
-          <div> 
+          <div>
             <label for="tiponmueble">Tipo de inmueble</label>
             <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" maxlength="35" required>
           </div>
-           <button type="button" onclick="Login()">Modificar</button>
+           <button type="button"  onclick="window.location.href = 'inmuebleDetails.html'">Modificar</button>
          </div>
       </div>
     </section>
-   
+
 </body>
 <script src="./js/login/login.js"></script>
 </html>

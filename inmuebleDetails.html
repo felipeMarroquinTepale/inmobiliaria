@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>client</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="./css/inmuebleDetails.css"  rel="stylesheet" />
 </head>
 <body>
-
-
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -21,28 +21,31 @@
         <ul>
             <li><a class="active" href="#">Home</a></li>
             <li><a  href="login.html">Cerrar sesion</a></li>
+            <li><a href="contenidoInmuebles.html">Regresar</a></li>
         </ul>
     </nav>
 
 
     <section>
-        <div class="contenedor">
-            <h1>INMOBILIARIA SANTA<h1>
-            <div class="contenedor2">
-                <ul class="lista-imagenes">
+      <div class="contenedor">
+         <h1>INMOBILIARIA SANTA<h1>
 
-                    <li>
-                        <img src="../inmobiliaria/img/contenidoInmuebles/imgContent.png" style="width: 25%" alt="Imagen 1">
-                        <p class="id">ID: 1</p>
-                        <p>Propietario:  Felipe De Jesus Marroquin Tepale. La propiedad cuenta con:250 metros cuadrados, planta numero 3. Numero de recibo unico: 298df2 Tipo de inmueble: Departamento </p>
-                        <p class="price">$20,000</p>
-                        <button id="boton-ubicacion" onclick="window.location.href = 'ubicacion.html'" type="submit">Ver ubicacion</button>
-                        <button id="" onclick="window.location.href = ''" disabled>Ver detalles</button>
-                    </li>
+         <div class="contenedor2">
+            <ul class="lista-imagenes">
+               <li>
+                  <img src="../inmobiliaria/img/contenidoInmuebles/imgContent.png" style="width: 25%" alt="Imagen 1">
+                  <p class="id">ID: 1</p>
+                  <p>Propietario:  Felipe De Jesus Marroquin Tepale. La propiedad cuenta con:250 metros cuadrados, planta numero 3. Numero de recibo unico: 298df2 Tipo de inmueble: Departamento </p>
+                  <p class="price">$20,000</p>
+                  <div class="botones">
+                    <button id="boton-editar" onclick="window.location.href = 'modificarEspacio.html'" type="submit">Editar</button>
+                    <button id="boton-borrar" onclick="window.location.href = 'eliminarEspacio.html'" type="submit">Borrar</button>
+                  </div>
+               </li>
 
-                </ul>
-            </div>
-        </div>
+            </ul>
+         </div>
+      </div>
     </section>
 
 </body>

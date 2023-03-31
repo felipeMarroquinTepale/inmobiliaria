@@ -50,6 +50,7 @@ nav{
 
 
   button {
+    width: 40%;
     background-color: #4c9eaf;
     color: #FFFFFF;
     padding: 10px 20px;
@@ -60,7 +61,7 @@ nav{
 
 
   .contenedor  {
-    background-color: #473f3f;
+    /* background-color: #473f3f; */
     max-width: 100%;
   }
 
@@ -88,18 +89,17 @@ nav{
 
   .lista-imagenes {
     /* background-color: #0E9AB1; */
+    background-color: #ECECEC;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
   .lista-imagenes li {
-    background-color: #d6d2d2;
     display: inline-block;
     margin: 20px;
     text-align: center;
-    width: 60%;
-
+    width: 70%;
   }
 
   .lista-imagenes a {
