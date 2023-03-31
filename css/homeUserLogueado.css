@@ -6,7 +6,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  
+
 }
 
 :root { font-family: 'Inter', sans-serif; }
@@ -162,8 +162,9 @@ h4 {
 
 .contenedor {
   max-width: 1080px;
-  margin: 3% 15%;
+  margin: 3% 15% 0 20%;
   text-align: center;
+
 }
 
 
@@ -182,7 +183,7 @@ footer {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  
+
 }
 
 :root { font-family: 'Inter', sans-serif; }
