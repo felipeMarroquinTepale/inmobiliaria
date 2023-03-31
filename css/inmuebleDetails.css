@@ -59,6 +59,10 @@ nav{
     border-radius: 15px;
   }
 
+  body {
+    font-family: Arial, sans-serif;
+    font-weight: normal
+  }
 
   .contenedor  {
     /* background-color: #473f3f; */
@@ -73,8 +77,10 @@ nav{
   }
 
   p{
+    margin-top: 5%;
     font-size: small;
     text-align: justify;
+    font-weight: normal
   }
 
 
