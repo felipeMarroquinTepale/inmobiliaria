@@ -173,7 +173,7 @@ function login(){
 
   if( (uname.value == "felipedmt") && (email.value == "felipe123@gmail.com") && (psw.value == "felipe12345")){
     alert("Estas logueado")
-    setTimeout(()=> document.location.href="loginUserLogueado.html",1000);
+    setTimeout(()=> document.location.href="homeUserLogueado.html",1000);
   }else if(uname.value == '' && email.value == '' && psw.value == ''){
     alert("Necesitas completar el formulario")
   }else{
@@ -189,7 +189,7 @@ function register(){
 
   if( (uname.value != '' && email.value != '' && psw.value != '')){
     alert("Estas registrado")
-    setTimeout(()=> document.location.href="loginUserLogueado.html",1000);
+    setTimeout(()=> document.location.href="homeUserLogueado.html",1000);
   }else if(uname.value == '' && email.value == '' && psw.value == ''){
     alert("Necesitas completar el formulario")
   }else{
