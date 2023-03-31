@@ -1,3 +1,18 @@
+/*INICIA MENU*/
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
 nav{
   background: white;
   height: 80px;
@@ -27,10 +42,12 @@ nav ul li a{
   border-radius: 3px;
   font-family: Inter;
 }
-nav li a.active, nav li a:hover{
+li a.active, li a:hover{
   background: #0E9AB1;
   transition: .5s;
 }
+
+
 .checkbtn{
   font-size: 18px;
   color: #18191F;
@@ -41,12 +58,57 @@ nav li a.active, nav li a:hover{
   display: none;
   font-family: Inter;
 }
-
-
 #check{
   display: none;
 }
+section{
+  background: #F5F5F5;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
 
+@media (max-width: 952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 14px;
+      font-family: Inter;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 18px;
+      font-family: Inter;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
 
 
 button {
@@ -65,6 +127,7 @@ body {
 .contenedor  {
   background-color: #ffffff;
   max-width: 100%;
+  padding: 2.5% 1%;
 
 }
 
@@ -84,6 +147,7 @@ p{
 h1 {
   /* background-color: #0E9AB1; */
   text-align: center;
+  padding: 1%;
 }
 
 .id, .price{
