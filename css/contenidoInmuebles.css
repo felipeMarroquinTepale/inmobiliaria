@@ -185,3 +185,28 @@ h1 {
   margin-right: auto;
 }
 
+
+.buttonList {
+  background-color: #8d0534;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+
+  .buttonList2 {
+    background-color: #2650a9;
+      background-repeat:no-repeat;
+      background-position:center;
+    }
+    .buttonList3 {
+      background-color: #095c5c;;
+        background-repeat:no-repeat;
+        background-position:center;
+      }
+
+  .botonimagen{
+    background-image:url(../img/contenidoInmuebles/gps.png);
+      background-repeat:no-repeat;
+      height:100px;
+      width:100px;
+      background-position:center;
+    }
