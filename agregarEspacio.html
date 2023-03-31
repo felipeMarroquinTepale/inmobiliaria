@@ -91,17 +91,17 @@
           </div>
           <div>
             <label for="caractprop">Caracteristicas de la propiedad</label>
-            <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" maxlength="35" required>
+            <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" maxlength="100" required>
           </div>
           <div>
             <label for="tiponmueble">Tipo de inmueble</label>
             <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" maxlength="35" required>
           </div>
-           <button type="button" onclick="window.location.href = 'contenidoInmuebles.html'">Agregar</button>
+           <button type="button" onclick="addInmobiliario()">Agregar</button>
          </div>
       </div>
     </section>
-
+    <script src="./js/login/add.js"></script>
 </body>
 
 </html>
