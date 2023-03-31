@@ -49,8 +49,6 @@ nav li a.active, nav li a:hover{
 
 
 
-
-
 button {
   background-color: #4c9eaf;
   color: #FFFFFF;
@@ -64,7 +62,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.contenedor {
+.contenedor  {
   background-color: #ffffff;
   max-width: 100%;
 
@@ -84,6 +82,7 @@ p{
 
 
 h1 {
+  /* background-color: #0E9AB1; */
   text-align: center;
 }
 
