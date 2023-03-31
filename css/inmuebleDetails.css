@@ -78,6 +78,7 @@ nav{
 
   p{
     margin-top: 5%;
+
     font-size: small;
     text-align: justify;
     font-weight: normal
@@ -85,7 +86,7 @@ nav{
 
 
   h1 {
-    /* background-color: #0E9AB1; */
+    margin-left: 15%;
     text-align: center;
   }
 
@@ -95,10 +96,11 @@ nav{
 
   .lista-imagenes {
     /* background-color: #0E9AB1; */
+    padding-left: 15%;
     background-color: #ECECEC;
     list-style: none;
     margin: 0;
-    padding: 0;
+
   }
 
   .lista-imagenes li {
