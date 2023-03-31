@@ -120,6 +120,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   border-radius: 15px;
+  width: 29%;
 }
 
 body {
@@ -163,11 +164,10 @@ h1 {
 }
 
 .lista-imagenes li {
-  /* background-color: #d6d2d2; */
   display: inline-block;
-  margin: 20px;
+  margin: 1%;
   text-align: center;
-  width: 30%;
+  width: 28%;
 }
 
 .lista-imagenes a {
