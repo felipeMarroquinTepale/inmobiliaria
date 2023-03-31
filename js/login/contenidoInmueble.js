@@ -64,8 +64,8 @@
             <p>Propietario:  ${value.name} . ${value.description} Tipo de inmueble: ${value.tipo}  </p>
             <p class="price">$ ${value.month}</p>
             <button class="buttonList" id="boton-ubicacion" title="ubicación iconos" onclick="gps(${value.id}" onclick="window.location.href = 'ubicacion.html'" type="submit">ubicacion</button>
-            <button  class="buttonList2" id=""  onclick="find(${value.id})" onclick="window.location.href = 'inmuebleDetails.html'">detalles</button>
-            <button  class="buttonList3" id="" onclick="removeData(${value.id})" onclick="window.location.href = 'eliminarEspacio.html'" >eliminar</button>
+            <button  class="buttonList2" id=""   onclick="window.location.href = 'inmuebleDetails.html?id=${value.id}'">detalles</button>
+            <button  class="buttonList3" id="" onclick="window.location.href = 'eliminarEspacio.html?id=${value.id}'" >eliminar</button>
             </li>`
     
     })

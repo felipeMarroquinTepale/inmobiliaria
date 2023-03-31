@@ -25,6 +25,10 @@ function serial_maker () {
     };
   };
 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
 function addInmobiliario(){
     const item = {
         "id": 0,
@@ -34,10 +38,8 @@ function addInmobiliario(){
         "tipo": ""
       }
       
-    let seqer = serial_maker()
-        serial_maker().set_prefix('');
-        serial_maker().set_seq('100');
-        item.id = serial_maker().gensym()
+
+        item.id = getRandomInt(100)
         item.name  = uname.value
         item.month  = rentmont.value
         item.description = caractprop.value
