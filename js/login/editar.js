@@ -4,6 +4,28 @@ const urlParams = new URLSearchParams(valores);
 const id = urlParams.get('id');
 console.log(id)
 
+window.onload = function(){
+    let itemsList = JSON.parse(localStorage.getItem('listItems')) ?? []
+    itemsList.forEach(function (value){
+        if(value.id == id){
+
+
+            var listaImagenes = document.getElementById('listaImagenes')
+            console.log(value.name)
+            listaImagenes.innerHTML += `
+            <li>
+                <img src="../inmobiliaria/img/contenidoInmuebles/imgContent.png" style="width: 25%" alt="Imagen 1">
+                <p class="id">ID: ${value.id}</p>
+                <p>Propietario:  ${value.name} . ${value.description} Tipo de inmueble: ${value.tipo}  </p>
+                <p class="price">$ ${value.month}</p>
+                <button id="boton-editar" onclick="editar()" type="submit">Editar</button>
+                <button id="boton-borrar" onclick="eliminar()"  type="submit">Borrar</button>
+                </li>`
+
+        }
+    })
+}
+
 function deleteSpace(){
 
     itemsList = JSON.parse(localStorage.getItem('listItems')) ?? []
