@@ -18,6 +18,7 @@ window.onload = function(){
                 <p class="id">ID: ${value.id}</p>
                 <p>Propietario:  ${value.name} . ${value.description} Tipo de inmueble: ${value.tipo}  </p>
                 <p class="price">$ ${value.month}</p>
+                <p>Nombre del comprador: ${value.comprador}</p>
                 <button id="boton-editar" onclick="editar()" type="submit">Editar</button>
                 <button id="boton-borrar" onclick="eliminar()"  type="submit">Borrar</button>
                 </li>`

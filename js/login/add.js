@@ -3,6 +3,8 @@ const uname = document.getElementById('uname');
 const rentmont = document.getElementById('rentmont');
 const caractprop = document.getElementById('caractprop');
 const tiponmueble = document.getElementById('tiponmueble');
+const comprador = document.getElementById('comprador');
+
 let list = document.getElementById("myList");
 itemList = JSON.parse(localStorage.getItem('listItems')) ?? []
 
@@ -35,7 +37,8 @@ function addInmobiliario(){
         "name": "",
         "description": "",
         "month": "",
-        "tipo": ""
+        "tipo": "",
+        "comprador":""
       }
       
 
@@ -44,6 +47,7 @@ function addInmobiliario(){
         item.month  = rentmont.value
         item.description = caractprop.value
         item.tipo = tiponmueble.value
+        item.comprador = comprador.value
         itemList.push(item)
         localStorage.setItem('listItems', JSON.stringify(itemList))
 

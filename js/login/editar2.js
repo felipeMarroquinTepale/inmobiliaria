@@ -12,6 +12,7 @@ window.onload = function(){
             document.getElementById('uname').value = value.name
             document.getElementById('caractprop').value = value.description
             document.getElementById('tiponmueble').value = value.tipo
+            document.getElementById('comprador').value = value.comprador
         }
     })
 }
@@ -31,6 +32,8 @@ function updateSpace(){
             value.name = document.getElementById('uname').value
             value.description  = document.getElementById('caractprop').value
             value.tipo = document.getElementById('tiponmueble').value
+            value.comprador = document.getElementById('comprador').value
+            
         }
     });
 

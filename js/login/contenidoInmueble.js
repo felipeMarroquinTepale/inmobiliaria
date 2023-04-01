@@ -2,25 +2,6 @@
   function isObjEmpty(obj) {
     return Object.keys(obj).length === 0;
   }
-  
-  function serial_maker () {
-  
-    var prefix = '';
-    var seq = 0;
-    return {
-      set_prefix: function (p) {
-        prefix = String(p);
-      },
-      set_seq: function (s) {
-        seq = s;
-      },
-      gensym: function () {
-        var result = prefix + seq;
-        seq += 1;
-        return result;
-      }
-    };
-  };
 
   window.onload = function(){
 
@@ -29,7 +10,8 @@
         "name": "",
         "description": "",
         "month": "",
-        "tipo": ""
+        "tipo": "",
+        "comprador":""
       }
 
     listaImagenes.innerHTML = ``;
@@ -39,14 +21,12 @@
     
     if(isObjEmpty(itemList)){
 
-        let seqer = serial_maker()
-        serial_maker().set_prefix('');
-        serial_maker().set_seq('100');
-        item.id = serial_maker().gensym()
+        item.id = getRandomInt(100)
         item.name  = "Felipe"
         item.month  = "20000"
         item.description = "La propiedad cuenta con:250 metros cuadrados, planta numero 3. Numero de recibo unico: 298df2"
         item.tipo = "Departamento"
+        item.comprador = "Jose perez Leon"
         itemList.push(item)
         localStorage.setItem('listItems', JSON.stringify(itemList))
 
@@ -63,12 +43,17 @@
             <p class="id">ID: ${i+1}</p>
             <p>Propietario:  ${value.name} . ${value.description} Tipo de inmueble: ${value.tipo}  </p>
             <p class="price">$ ${value.month}</p>
+            <p>Nombre de comprador: ${value.comprador}</p>
             <button class="buttonList" id="boton-ubicacion" title="ubicación iconos"  onclick="window.location.href = 'ubicacion.html'" type="submit">ubicacion</button>
             <button  class="buttonList2" id=""   onclick="window.location.href = 'inmuebleDetails.html?id=${value.id}'">detalles</button>
             <button  class="buttonList3" id="" onclick="window.location.href = 'eliminarEspacio.html?id=${value.id}'" >eliminar</button>
             </li>`
     
     })
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 
