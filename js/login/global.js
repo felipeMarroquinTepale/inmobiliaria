@@ -1,0 +1,1 @@
+const idDelete = 0
