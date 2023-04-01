@@ -60,7 +60,12 @@
 
             <div>
               <label for="tiponmueble">Tipo de inmueble
-              <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" minlength="8" maxlength="20" required>
+                <select class="selecteds" name="typeIn" id="tiponmueble" required>
+                  <option value="Casa">Casa</option>
+                  <option value="Departamento">Departamento</option>
+                  <option value="Local-comercial">Local-comercial</option>
+                  <option value="Casa-en-privada">Casa-en-privada</option>
+                </select>
               <span class="error" aria-live="polite"></span>
               </label>
             </div>
