@@ -31,29 +31,46 @@
       <div class="divSubTitle">
          <span class="spanSubTitle">Modificar espacio</span>
       </div>
-      <div class="divBody">
-         <form  method="post">
 
-         <div class="container">
-         <div>
-           <label for="uname">Nombre</label>
-           <input type="text" placeholder="Ingresa el nombre del cliente" name="uname" id="uname" pattern="^[A-Za-z]+$" maxlength="35" required>
-         </div>
-         <div>
-            <label for="rentmont">Renta mensual</label>
-            <input type="number" placeholder="Ingresa monto de mensualidad" name="rentmont" id="rentmont" pattern="^[A-Za-z]+$" maxlength="10" required>
+
+      <div class="divBody">
+        <form >
+
+          <div class="container">
+            <div>
+              <label for="uname">Nombre
+              <input type="text" placeholder="Ingresa el nombre del cliente" name="uname" id="uname" pattern="[a-z]{8,}" minlength="8" required>
+              <span class="error" aria-live="polite"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="rentmont">Renta mensual
+              <input type="number" placeholder="Ingresa monto de mensualidad" name="rentmont" id="rentmont"  maxlength="10" required>
+              <span class="error" aria-live="polite"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="caractprop">Caracteristicas de la propiedad
+              <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" minlength="8" maxlength="35" required>
+              <span class="error" aria-live="polite"></span>
+              </label>
+            </div>
+
+            <div>
+              <label for="tiponmueble">Tipo de inmueble
+              <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" minlength="8" maxlength="20" required>
+              <span class="error" aria-live="polite"></span>
+              </label>
+            </div>
+
+            <button type="button"  onclick="updateSpace()">Modificar</button>
           </div>
-          <div>
-            <label for="caractprop">Caracteristicas de la propiedad</label>
-            <input type="text" placeholder="Describe las caracterisiticas" name="caractprop" id="caractprop" pattern="^[A-Za-z]+$" maxlength="35" required>
-          </div>
-          <div>
-            <label for="tiponmueble">Tipo de inmueble</label>
-            <input type="text" placeholder="Ingresa el tipo de inmueble a rentar" name="tiponmueble" id="tiponmueble" pattern="^[A-Za-z]+$" maxlength="35" required>
-          </div>
-           <button type="button"  onclick="updateSpace()">Modificar</button>
-         </div>
+        </form>
       </div>
+
+
     </section>
     <script src="./js/login/editar2.js"></script>
 </body>
