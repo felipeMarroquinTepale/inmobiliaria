@@ -238,6 +238,8 @@ function validateclick() {
       event.preventDefault();
     }
 
+
+
     if (!tiponmueble.validity.valid || tiponmueble.value.length <= 0) {
         // Si no es así, mostramos un mensaje de error apropiado
         showError(3);
